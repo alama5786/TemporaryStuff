@@ -1,0 +1,1 @@
+As discussed, remote access disable activity will proceed with change request once activity complete, team needs to perform IVP/AVP, Kindly provide the AVP POC details to perform the AVP once activity complete.
