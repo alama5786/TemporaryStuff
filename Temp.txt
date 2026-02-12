@@ -1,121 +1,20 @@
-CHIRANJEEVI VOORA
-Synopsis: Seasoned Release and Operations Manager with over 15 years of experience orchestrating end-to-end release management, deployment automation, and operational excellence across Agile and DevOps-driven environments. Experienced working with Azure DevOps Boards, Repos, and Pipelines to align release planning, sprint execution, deployment automation, and governance. Skilled at planning, coordinating, and executing production deployments using Azure DevOps–aligned CI/CD practices, supported by robust risk assessment, rollback strategies, and compliance controls.
+Hi [Manager Name],
 
-Proven ability to lead ServiceNow-based change processes while integrating release governance with Azure DevOps pipelines, approval workflows, and gating criteria. Experienced in facilitating CAB reviews, enforcing version control, and ensuring audit readiness across multi-environment deployments.
+Thank you for sharing Chiranjeevi’s profile.
 
-Collaborative partner to development, QA, security, and platform teams, driving release readiness, sprint-aligned rollouts, and environment promotion strategies across Dev, QA, UAT, and Production. Hands-on experience supporting pipeline-driven deployments, release calendars, and coordinated cutover planning.
+He has strong experience in Release Management, governance, CAB coordination, and Azure DevOps–driven environments. His background in ITIL, change management, and stakeholder communication is solid and well aligned from a process standpoint.
 
-Demonstrated success in creating runbooks, playbooks, post-release RCA, and continuous improvement initiatives that reduced change failure rates and MTTR. Strong background in operations and performance optimization, leveraging release and operational metrics to improve SLAs, productivity, and quality while aligning resources to contractual and regulatory requirements.
+However, for this particular requirement, we are currently looking for a resource with strong hands-on exposure to the technologies we are actively using in our environment — specifically AWS, Jenkins, GitHub, MDS, and SQL Server.
 
-Adept at stakeholder communication and executive reporting, delivering clear release and deployment performance metrics to senior management and clients, and managing escalations and outage communications. Proven mentor and team leader who coaches staff and oversees asset management and automation use cases.
+At present, most of the queries coming from BAU and project teams are directly related to these tools. We need someone who can immediately analyze, troubleshoot, and respond confidently. If the person does not already have exposure to these platforms, instead of addressing user queries, the team will first need to spend time training and walking him through the tools and setup, which will impact delivery timelines.
 
-Actively expanding hands-on expertise in Azure DevOps, cloud deployments, and pipeline automation, with a strong focus on enabling secure, reliable cloud migrations. Committed to measurable outcomes, I drive cross-functional collaboration, reduce operational risk, and deliver high-quality software through repeatable, compliant, and automated release processes with quantifiable impact.
+Additionally, this role requires the individual to confidently engage with teams such as AIG Cloud, AIG DevOps, and DBA while discussing environment, deployment, database, and infrastructure-related topics. Practical hands-on experience in our current tech stack is essential for that level of interaction.
 
-EXPERIENCE SUMMARY	Areas of Experience
+From the resume, his primary exposure appears to be around Azure DevOps and release governance, and I do not see strong hands-on experience in AWS, Jenkins, GitHub, MDS, or SQL Server administration/support.
 
-Industries
-IT
+Given the current workload and expectations, we would prefer someone who already has working exposure to these technologies.
 
-Tools
-SDLC, Version Control, CI/CD Pipelines, JIRA, Azure, ServiceNow
+Please feel free to share other profiles that are more aligned with the required tech stack.
 
-
-Software Development Methodology
-Agile Methodology
-ITIL Frameworks
-
-Skills
-Stakeholder communication, Problem solving, Risk Assessment, Release Co-ordination, Risk Mitigation
-Experience in release management, deployment, and continuous improvement initiatives.
-Exceptional ownership and responsibility in project execution.
-Skilled in team leadership, mentoring, and client communication.
-Strong data analysis and decision-making capabilities.
-Strong understanding of IT Infrastructure platform hosting the applications. Cloud, On-prem and Hybrid
-Proficient in troubleshooting, system monitoring, and technical support	
-
-
-QUALIFICATION
-Degree	Institute	Year
-B.C.A Computer Application (Part-time)	Madras University, Chennai	2015
-Diploma in Electronics & Communication	V. Ramakrishna Polytechnic College, Chennai	2007
-
-
-CERTIFICATION
-Certification	Institute	Year
-ITIL V3	EXIN	2017
-Azure - AZ-900	Microsoft	2021
-
-
-Working with Hexaware Technologies Ltd. From Dec 2017 – Till date
-PROJECT EXPERIENCE
-Project Name	:  CHRISTIE’S
-Role 	:  Technical Specialist / Release Manager 
-Environment	:  IT Infrastructure Support
-Duration 	:  Dec 2017 – Till Date
-Tools Used	:  Jira, Confluence, ServiceNow, Azure, Splunk, ELK
-
-Roles and Responsibilities
-1. Release Management & Deployment:
-Led end-to-end release and change management activities, coordinating Azure DevOps–driven deployments to ensure code is built, deployed, configured, and maintained efficiently while meeting compliance and audit requirements.
-Represented ServiceNow-based change requests and coordinated Change Advisory Board (CAB) reviews to validate risk assessments and secure timely approvals.
-Defined and documented release recommendations, including scope, schedule, deliverables, environment plans, and rollback/contingency strategies for each production change.
-Drove release readiness activities and pipeline gating criteria (environment health checks, dependency validation, pre-deployment approvals) to minimize production risk.
-Partnered with cross-functional Agile teams (development, QA, operations, security, platform) to orchestrate synchronized, sprint-aligned releases using Azure DevOps Boards and release planning artifacts.
-Created and maintained runbooks, deployment playbooks, and rollback procedures supporting pipeline-driven deployments, accelerating recovery and reducing mean time to restore (MTTR).
-Performed post-release reviews and root-cause analysis (RCA), translating findings into process improvements that reduced change failure rates and recurrence of issues.
-Coordinated release communications, blackout periods, and outage windows with stakeholders and business owners to minimize user impact and maintain transparency.
-Ensured traceability and compliance for all releases by enforcing version control standards, documentation requirements, and change audit trails for regulatory and audit readiness.
-Supported cloud-based deployment and migration releases, collaborating with platform teams to automate deployment pipelines and environment promotions across Dev, QA, UAT, and Production.
-
-2. Operations & Performance Optimization
-Drove productivity, quality, and coverage metrics to align operational performance with organizational goals and contractual requirements.
-Led data-driven analysis to identify business challenges, risks, and improvement opportunities, proposing actionable solutions.
-Executed critical operational initiatives while elevating performance standards across teams.
-Conducted root-cause analysis and implemented corrective action plans to improve process efficiency, stability, and service quality.
-Led continuous improvement initiatives to enhance productivity, SLA adherence, and output quality.
-Prioritized resource allocation based on business needs, risk exposure, and contractual obligations.
-
-3. Reporting & Stakeholder Communication
-Developed and maintained reporting frameworks to provide clear insights into release, operational, and performance metrics for senior management and stakeholders.
-Presented data-driven updates, process reviews, and key KPIs to internal leadership and external clients.
-Managed internal and external communications, ensuring timely, accurate, and concise status reporting.
-Led client and stakeholder meetings to review performance, address risks and issues, and propose improvement initiatives.
-
-4. Mentorship & Team Leadership
-Mentored team members by providing guidance, training, and hands-on support with release, change, and operational processes.
-Served as a primary point of contact for internal teams and clients, ensuring smooth coordination and timely execution of deliverables.
-Consistently met or exceeded performance benchmarks while fostering team development, accountability, and operational excellence.
-
-5. Technical Support & Troubleshooting
-Provided support for a wide range of technical and operational issues, ensuring timely resolution within defined SLAs.
-Coordinated incident response activities and prepared reports to support issue resolution, RCA, and continuous improvement efforts.
-
-6. Process Improvement & Efficiency
-Identified opportunities for process improvement and implemented solutions to enhance productivity and reduce manual errors.
-Regularly reviewed team performance metrics (e.g., CSAT, DSAT), providing feedback and corrective actions where needed.
-Coordinated with internal teams to improve deployment efficiency, automation adoption, and release reliability.
-
-7. Client Engagement & Reporting
-Managed client reporting and weekly review calls, presenting performance data, release outcomes, and improvement initiatives.
-Actively engaged with clients during escalations, ensuring issues were addressed effectively, transparently, and in a timely manner.
-
-
- 
-
-
-
-About Hexaware
-
-Hexaware is a global technology and business process services company. Our 28,400 Hexawarians wake up every day with a singular purpose; to create smiles through great people and technology. With this purpose gaining momentum, we are well on our way to realizing our vision of being the most loved digital transformation partner in the world. We also seek to protect the planet and build a better tomorrow for our customers, employees, partners, investors, and the communities in which we operate.
-
-With 45+ offices in 19 countries, we empower enterprises worldwide to realize digital transformation at scale and speed by partnering with them to build, transform, run, and optimize their technology and business processes.
-
-
-Learn more about Hexaware at www.hexaware.com
-
-
-
-
-
-
-
+Regards,
+Aziz
