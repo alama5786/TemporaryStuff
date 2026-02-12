@@ -1,8 +1,23 @@
-As discussed, remote access disable activity will proceed with change request once activity complete, team needs to perform IVP/AVP, Kindly provide the AVP POC details to perform the AVP once activity complete.
+Support Needed for Setting Up Prod-Like Non-Prod Environment
 
 
-I have performed the AVP check by connecting to the SQL instances of the mentioned servers, for which the remote access has now been revoked. The validation has been successfully completed from our end.
+Hi Team,
 
-Requesting the DBA team to please proceed with the IVP check and confirm once completed.
+I hope you’re doing well.
 
-Please let me know if any additional details are required.
+We’re planning to set up a **non-production environment that closely mirrors our production setup**, so teams can test and validate changes safely without impacting prod.
+
+To achieve this, we need to **securely read selected data and metadata from the prod AWS account into the non-prod account**, while ensuring:
+
+* Prod remains read-only and protected
+* No write access from non-prod to prod
+* Full auditing and least-privilege access
+
+We’d appreciate your support and guidance to help us implement the **right IAM, S3 bucket, and (if required) KMS policies** to enable this in a secure and compliant way.
+
+Happy to walk through the approach and get your recommendations before we proceed.
+
+Thanks in advance for your help.
+
+Best regards,
+Aziz
