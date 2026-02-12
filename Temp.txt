@@ -1,1 +1,8 @@
 As discussed, remote access disable activity will proceed with change request once activity complete, team needs to perform IVP/AVP, Kindly provide the AVP POC details to perform the AVP once activity complete.
+
+
+I have performed the AVP check by connecting to the SQL instances of the mentioned servers, for which the remote access has now been revoked. The validation has been successfully completed from our end.
+
+Requesting the DBA team to please proceed with the IVP check and confirm once completed.
+
+Please let me know if any additional details are required.
