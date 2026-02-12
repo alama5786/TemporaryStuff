@@ -1,0 +1,161 @@
+You want:
+
+✅ Non-Prod (Dev) account to read data from Prod S3
+❌ No write access to Prod
+✅ Secure cross-account setup
+
+I’ll tell you exactly which policies to create/modify and where.
+
+🎯 What You Need
+
+To allow Dev account to read Prod S3 bucket:
+
+You must configure TWO things:
+
+✅ IAM Role in Dev account
+
+✅ Bucket Policy in Prod account
+
+That’s it.
+
+🟦 STEP 1 — Create IAM Role in DEV Account
+
+In Dev AWS account, create a role:
+
+Example Role Name:
+DevIcebergReplicationRole
+
+
+Attach this IAM policy to it:
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ReadProdBucket",
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject",
+        "s3:ListBucket"
+      ],
+      "Resource": [
+        "arn:aws:s3:::prod-bucket",
+        "arn:aws:s3:::prod-bucket/*"
+      ]
+    },
+    {
+      "Sid": "FullAccessToDevBucket",
+      "Effect": "Allow",
+      "Action": "s3:*",
+      "Resource": [
+        "arn:aws:s3:::nonprod-bucket",
+        "arn:aws:s3:::nonprod-bucket/*"
+      ]
+    }
+  ]
+}
+
+What this does:
+
+Read from Prod bucket
+
+Full access to Dev bucket
+
+Cannot write to Prod
+
+🟦 STEP 2 — Modify PROD Bucket Policy
+
+Now go to:
+
+Prod Account → S3 → prod-bucket → Permissions → Bucket Policy
+
+Add this statement:
+
+{
+  "Sid": "AllowDevAccountReadAccess",
+  "Effect": "Allow",
+  "Principal": {
+    "AWS": "arn:aws:iam::<DEV_ACCOUNT_ID>:role/DevIcebergReplicationRole"
+  },
+  "Action": [
+    "s3:GetObject",
+    "s3:ListBucket"
+  ],
+  "Resource": [
+    "arn:aws:s3:::prod-bucket",
+    "arn:aws:s3:::prod-bucket/*"
+  ]
+}
+
+
+Replace:
+
+<DEV_ACCOUNT_ID>
+
+
+with actual Dev account number.
+
+🔐 If Prod Bucket Uses KMS Encryption (Very Important)
+
+If objects are encrypted with a KMS key, you must also update the KMS key policy in Prod.
+
+Go to:
+Prod → KMS → Key used by S3 → Key Policy
+
+Add:
+
+{
+  "Sid": "AllowDevAccountDecrypt",
+  "Effect": "Allow",
+  "Principal": {
+    "AWS": "arn:aws:iam::<DEV_ACCOUNT_ID>:role/DevIcebergReplicationRole"
+  },
+  "Action": [
+    "kms:Decrypt",
+    "kms:DescribeKey"
+  ],
+  "Resource": "*"
+}
+
+
+If you skip this, you’ll get:
+
+AccessDenied: KMS Access Denied
+
+🔎 What You DO NOT Need
+
+❌ No need to modify Glue in Prod
+❌ No need to allow Prod to access Dev
+❌ No need for trust relationship if not assuming cross-account role
+
+This is simple S3 cross-account read.
+
+🧪 How To Test
+
+From Dev account:
+
+aws s3 ls s3://prod-bucket/warehouse/db/table/
+
+
+If it lists objects → setup is correct.
+
+🔐 Security Best Practice (Recommended)
+
+Instead of giving full bucket access, you can restrict to table path only:
+
+"Resource": [
+  "arn:aws:s3:::prod-bucket/warehouse/db/table",
+  "arn:aws:s3:::prod-bucket/warehouse/db/table/*"
+]
+
+
+This is more secure for production.
+
+✅ Final Summary
+
+You must change:
+
+Location	What to Change
+Dev Account	Create IAM Role with read to prod + write to dev
+Prod Account	Add bucket policy allowing that role
+Prod KMS (if used)	Allow decrypt permission
