@@ -1,16 +1,12 @@
-Hi,
-
-Thanks for your message.
-
-Could you please share a bit more detail? We handle multiple pipelines, repositories, and branches for different teams, so we can’t identify the exact setup without specific information.
-
-Please provide:
-
-* Jenkins pipeline name
-* Code repository name
-* Branch name
-
-Once we have these details, we’ll make the change.
-
-Thanks,
-Aziz
++ /jenkins_home/apps/Liquibase3.8.2/liquibase --logLevel=debug --defaultsFile=liquibase.properties update --context=dev
+11:21:41.778 [main] DEBUG liquibase.resource.ClassLoaderResourceAccessor - Opening jar:file:/jenkins_home/apps/Liquibase3.8.2/liquibase.jar!/liquibase.build.properties as liquibase.build.properties
+11:21:41.785 [main] INFO liquibase.integration.commandline.Main - Starting Liquibase at Fri, 13 Feb 2026 11:21:41 UTC (version 3.8.2 #26 built at Tue Nov 26 04:53:39 UTC 2019)
+11:21:41.785 [main] WARN liquibase.integration.commandline.Main - To display the help, please pass the '--help' option on the command line.
+11:21:41.785 [main] ERROR liquibase.integration.commandline.Main - Unexpected error running Liquibase: Unknown option: 'context'
+11:21:41.785 [main] ERROR liquibase.integration.commandline.Main - For more information, please use the --logLevel flag
+11:21:41.787 [main] ERROR liquibase.integration.commandline.Main - Unexpected error running Liquibase: Unknown option: 'context'
+liquibase.exception.CommandLineParsingException: Unknown option: 'context'
+	at liquibase.integration.commandline.Main.parseOptionArgument(Main.java:1009)
+	at liquibase.integration.commandline.Main.parseOptions(Main.java:951)
+	at liquibase.integration.commandline.Main.run(Main.java:195)
+	at liquibase.integration.commandline.Main.main(Main.java:143)
