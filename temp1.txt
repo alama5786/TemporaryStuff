@@ -1,14 +1,16 @@
-Dear  @Soni, Jitharth
+Hi,
 
-Can you please elaborate your request and provide following info clearly, you know your stuff because you are working on it
+Thanks for your message.
 
-•	Name of Jenkin pipeline
-•	Name of Code repo
-•	Name of Branch Name
+Could you please share a bit more detail? We handle multiple pipelines, repositories, and branches for different teams, so we can’t identify the exact setup without specific information.
 
-Thanks and Regards,
+Please provide:
 
+* Jenkins pipeline name
+* Code repository name
+* Branch name
 
-Hi Aziz,
+Once we have these details, we’ll make the change.
 
-Could you please change the LDR pipeline to Release-NewYork-Migration branch.
+Thanks,
+Aziz
