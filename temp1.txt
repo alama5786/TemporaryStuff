@@ -1,12 +1,11 @@
-+ /jenkins_home/apps/Liquibase3.8.2/liquibase --logLevel=debug --defaultsFile=liquibase.properties update --context=dev
-11:21:41.778 [main] DEBUG liquibase.resource.ClassLoaderResourceAccessor - Opening jar:file:/jenkins_home/apps/Liquibase3.8.2/liquibase.jar!/liquibase.build.properties as liquibase.build.properties
-11:21:41.785 [main] INFO liquibase.integration.commandline.Main - Starting Liquibase at Fri, 13 Feb 2026 11:21:41 UTC (version 3.8.2 #26 built at Tue Nov 26 04:53:39 UTC 2019)
-11:21:41.785 [main] WARN liquibase.integration.commandline.Main - To display the help, please pass the '--help' option on the command line.
-11:21:41.785 [main] ERROR liquibase.integration.commandline.Main - Unexpected error running Liquibase: Unknown option: 'context'
-11:21:41.785 [main] ERROR liquibase.integration.commandline.Main - For more information, please use the --logLevel flag
-11:21:41.787 [main] ERROR liquibase.integration.commandline.Main - Unexpected error running Liquibase: Unknown option: 'context'
-liquibase.exception.CommandLineParsingException: Unknown option: 'context'
-	at liquibase.integration.commandline.Main.parseOptionArgument(Main.java:1009)
-	at liquibase.integration.commandline.Main.parseOptions(Main.java:951)
-	at liquibase.integration.commandline.Main.run(Main.java:195)
-	at liquibase.integration.commandline.Main.main(Main.java:143)
+Hi Tesh,
+
+We have DDL pipelines for each environment and were running it off of dev which matches up to dwawdbtu733715.
+Dev3 matches up to dwawdbtu733706 and I can see that it is working now for the service account.
+If you want to confirm, I have ran it currently for BiMetaData - https://controller04.ci.devops.aig.net/job/talbot/job/TALISMAN-7337/job/dev-ci-cd/job/dev3/job/data/job/ddl/job/Talisman-Bimetadata-DB/job/ci-cd-pipeline/
+
+Aziz - Can we please get confirmation on what exact environments need to have DDL pipeliens and what databases should they be pointing too.
+As I was led to believe that we need them for each env and the database would match the ones of the dacpac pipelines of the same component.
+
+Regards,
+Sean
