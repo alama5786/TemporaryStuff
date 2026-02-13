@@ -1,0 +1,14 @@
+Dear  @Soni, Jitharth
+
+Can you please elaborate your request and provide following info clearly, you know your stuff because you are working on it
+
+•	Name of Jenkin pipeline
+•	Name of Code repo
+•	Name of Branch Name
+
+Thanks and Regards,
+
+
+Hi Aziz,
+
+Could you please change the LDR pipeline to Release-NewYork-Migration branch.
